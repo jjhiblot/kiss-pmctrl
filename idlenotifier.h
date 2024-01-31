@@ -13,10 +13,6 @@ public:
     IdleNotifier();
     IdleNotification *create_notification(int timeout);
 
-private slots:
-    void handleExtensionActive();
-private:
-    bool m_active;
 };
 
 class IdleNotification : public QWaylandClientExtensionTemplate<IdleNotification>, public QtWayland::ext_idle_notification_v1
